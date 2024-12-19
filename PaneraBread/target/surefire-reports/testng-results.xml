@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-19T19:25:10Z" name="Surefire suite" finished-at="2024-12-19T19:25:32Z" duration-ms="22218">
+    <groups>
+    </groups>
+    <test started-at="2024-12-19T19:25:10Z" name="Surefire test" finished-at="2024-12-19T19:25:32Z" duration-ms="22218">
+      <class name="test.com.SipclubTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:test.com.SipclubTest@101df177]" started-at="2024-12-19T13:25:10Z" name="setUpClass" finished-at="2024-12-19T13:25:10Z" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:test.com.SipclubTest@101df177]" started-at="2024-12-19T13:25:10Z" name="setUpMethod" finished-at="2024-12-19T13:25:14Z" duration-ms="3899" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testSipclubTestCase()[pri:0, instance:test.com.SipclubTest@101df177]" started-at="2024-12-19T13:25:14Z" name="testSipclubTestCase" finished-at="2024-12-19T13:25:32Z" duration-ms="17858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSipclubTestCase -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:test.com.SipclubTest@101df177]" started-at="2024-12-19T13:25:32Z" name="tearDownMethod" finished-at="2024-12-19T13:25:32Z" duration-ms="432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.com.SipclubTest@101df177]" started-at="2024-12-19T13:25:32Z" name="tearDownClass" finished-at="2024-12-19T13:25:32Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- test.com.SipclubTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

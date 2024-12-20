@@ -47,13 +47,17 @@ public class SipclubTest {
 
     @AfterMethod
     public void tearDownMethod() throws Exception {
-        driver.close();
+        
     }
     @Test
     public void testSipclubTestCase() throws Exception {
-    driver.get("https://www.panerabread.com/en-us/home.html?utm_medium=cpc&utm_source=google&utm_campaign=Gold-US-BR&utm_content=Gold&utm_term=panera%20bread&ef_id=CjwKCAiAgoq7BhBxEiwAVcW0LN1yBiP0Mat9Xja6QQ8CseNV1aZU2xfLjnr0YmnT_k-NOb5CwgbL9BoCScAQAvD_BwE%3AG%3As&s_kwcid=AL%2115596%213%21695621322865%21e%21%21g%21%21panera%20bread%2119966289160%21148056040077&gad_source=1&gclid=CjwKCAiAgoq7BhBxEiwAVcW0LN1yBiP0Mat9Xja6QQ8CseNV1aZU2xfLjnr0YmnT_k-NOb5CwgbL9BoCScAQAvD_BwE");
-    driver.findElement(By.xpath("//div[@id='iw-main-content']/div/header/div[2]/div/div/div/button/span/span")).click();
-    driver.findElement(By.linkText("Sip Club")).click();
-    driver.get("https://www.panerabread.com/en-us/mypanera/subscription.html");
+    driver.get("https://www.panerabread.com/en-us/home.html");
+   driver.manage().window().maximize();
+    Thread.sleep(5000);
+    driver.findElement(By.id("iw-main-content")).click();
+    driver.findElement(By.id("top")).click();
+    //driver.get("https://www.panerabread.com/en-us/mypanera/subscription.html");
+    Thread.sleep(3000);
+    driver.close();
   }
 }

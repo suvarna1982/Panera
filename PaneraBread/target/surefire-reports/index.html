@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
+                    <div class="method-list-content passed suite-Surefire_suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="Paneracatering" class="method navigator-link" hash-for-method="testPaneraCateringTestCase">testPaneraCateringTestCase</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.com.CateringTest" class="method navigator-link" hash-for-method="testPaneraCateringTestCase">testPaneraCateringTestCase</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,10 +116,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
+          <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Paneracatering</span>
+              <img src="passed.png"/>
+              <span class="class-name">test.com.CateringTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -127,32 +127,10 @@
                   <a name="testPaneraCateringTestCase">
                   </a> <!-- testPaneraCateringTestCase -->
                   <span class="method-name">testPaneraCateringTestCase</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Fairfield, CA 94533 US&quot;}
-  (Session info: chrome=131.0.6778.140)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-PML81LI&apos;, ip: &apos;192.168.1.20&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\maisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59333}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 89c255bcca47d62e1bd83638fdbeb0db
-*** Element info: {Using=link text, value=Fairfield, CA 94533 US}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at Paneracatering.testPaneraCateringTestCase(Paneracatering.java:80)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
         </div> <!-- panel Surefire_suite -->
         <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -164,7 +142,7 @@ Session ID: 89c255bcca47d62e1bd83638fdbeb0db
 &lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test name=&quot;Surefire test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Paneracatering&quot;/&gt;
+      &lt;class name=&quot;test.com.CateringTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -207,13 +185,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testPaneraCateringTestCase')
-data.setCell(0, 2, 'Paneracatering')
-data.setCell(0, 3, 67275);
+data.setCell(0, 2, 'test.com.CateringTest')
+data.setCell(0, 3, 44232);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 44 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -239,28 +217,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Paneracatering</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.com.CateringTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">18 ms</span>
+                <span class="method-start">12 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testPaneraCateringTestCase</span>
-                <span class="method-start">2171 ms</span>
+                <span class="method-start">1821 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod</span>
-                <span class="method-start">69463 ms</span>
+                <span class="method-start">46054 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">70092 ms</span>
+                <span class="method-start">46662 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

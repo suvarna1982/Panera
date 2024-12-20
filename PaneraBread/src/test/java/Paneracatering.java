@@ -52,8 +52,11 @@ public class Paneracatering {
     
     @Test
   public void testPaneraCateringTestCase() throws Exception {
-    driver.get("https://www.google.com/search?gs_ssp=eJzj4tTP1TcwLsg2tFBgNGB0YPBiK0jMSy1KBABB_AXf&q=panera&oq=panear&gs_lcrp=EgZjaHJvbWUqGQgBEC4YxwEYkQIYsQMYyQMY0QMYgAQYigUyBggAEEUYOTIZCAEQLhjHARiRAhixAxjJAxjRAxiABBiKBTINCAIQABiSAxiABBiKBTINCAMQABiSAxiABBiKBTIMCAQQABgKGLEDGIAEMg8IBRAAGAoYgwEYsQMYgAQyCQgGEAAYChiABDISCAcQLhgKGMcBGLEDGNEDGIAEMgkICBAuGAoYgATSAQk0MzMwajBqMTWoAgmwAgE&sourceid=chrome&ie=UTF-8");
-    driver.findElement(By.xpath("//div[@id='AkU20']/div/div/div/div/div/div/div/div/span/a/h3")).click();
+    driver.get("https://www.panerabread.com/en-us/home.html");
+    driver.manage().window().maximize();
+    Thread.sleep(3000);
+    driver.findElement(By.xpath("//*[@id=\"global-banner-v2\"]/div[1]/div/a")).click();
+    Thread.sleep(3000);
     driver.get("https://www.panerabread.com/en-us/home.html");
     driver.findElement(By.linkText("Catering")).click();
     driver.get("https://catering.panerabread.com/");
@@ -78,6 +81,7 @@ public class Paneracatering {
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Fairfield, CA 94533'])[2]/following::span[3]")).click();
     Thread.sleep(3000);
     
+    Thread.sleep(3000);
     driver.close();
   }
 }

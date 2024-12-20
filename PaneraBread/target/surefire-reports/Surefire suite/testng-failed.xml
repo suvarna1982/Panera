@@ -3,15 +3,15 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test name="Surefire test(failed)">
     <classes>
-      <class name="test.com.SipclubTest">
+      <class name="Paneracatering">
         <methods>
-          <include name="setUpMethod"/>
-          <include name="testSipclubTestCase"/>
-          <include name="setUpClass"/>
+          <include name="testPaneraCateringTestCase"/>
           <include name="tearDownMethod"/>
           <include name="tearDownClass"/>
+          <include name="setUpMethod"/>
+          <include name="setUpClass"/>
         </methods>
-      </class> <!-- test.com.SipclubTest -->
+      </class> <!-- Paneracatering -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
